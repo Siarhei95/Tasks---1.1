@@ -7,6 +7,7 @@ public class Book {
     private String description;
     private String nameLibrary;
 
+
     public Book(String nameLibrary){
         this.nameLibrary = nameLibrary;
     }
@@ -32,9 +33,12 @@ public class Book {
     public int getYearOfPublication() {
         return yearOfPublication;
     }
+
     public String getDescription(){
         return description;
     }
+
+
     public String toString() {
         return  String.format("\tBook: " + book + " \t author: " + author + " \t  yearOfPublication: "
                 + yearOfPublication + "\t  description: " + description +"\n");
